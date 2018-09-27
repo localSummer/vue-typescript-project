@@ -7,6 +7,7 @@ import iView from 'iview';
 import 'iview/dist/styles/iview.css';
 import Component from 'vue-class-component';
 
+// 注册路由组件钩子函数
 Component.registerHooks([
     'beforeRouteEnter',
     'beforeRouteLeave',
@@ -17,6 +18,7 @@ Vue.config.productionTip = false;
 
 Vue.use(iView);
 
+// 配置请求基路径
 fly.config.baseURL = '/duty';
 
 new Vue({
